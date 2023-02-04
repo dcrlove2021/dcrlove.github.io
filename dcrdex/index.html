@@ -1,0 +1,677 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="./">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.11">
+    
+    
+      
+        <title>钱包使用教程 - decred德信原子交换社区</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0d440cfe.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#proposal-guidelines" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="decred德信原子交换社区" class="md-header__button md-logo" aria-label="decred德信原子交换社区" data-md-component="logo">
+      
+  <img src="../imge/color.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            decred德信原子交换社区
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              钱包使用教程
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="decred德信原子交换社区" class="md-nav__button md-logo" aria-label="decred德信原子交换社区" data-md-component="logo">
+      
+  <img src="../imge/color.svg" alt="logo">
+
+    </a>
+    decred德信原子交换社区
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        简介
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./" class="md-nav__link">
+        原子交易所
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          钱包使用教程
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        钱包使用教程
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proposal-template" class="md-nav__link">
+    Proposal Template
+  </a>
+  
+    <nav class="md-nav" aria-label="Proposal Template">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what" class="md-nav__link">
+    What
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why" class="md-nav__link">
+    Why
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how" class="md-nav__link">
+    How
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#who" class="md-nav__link">
+    Who
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when" class="md-nav__link">
+    When
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-for-creating-a-successful-proposal" class="md-nav__link">
+    Tips for Creating a Successful Proposal
+  </a>
+  
+    <nav class="md-nav" aria-label="Tips for Creating a Successful Proposal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#engage-the-community" class="md-nav__link">
+    Engage the community
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demonstrate-clearly-how-your-proposal-will-benefit-decred" class="md-nav__link">
+    Demonstrate clearly how your proposal will benefit Decred
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-the-hype" class="md-nav__link">
+    Check the hype
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#speak-to-a-broad-audience" class="md-nav__link">
+    Speak to a broad audience
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-credibility" class="md-nav__link">
+    Build Credibility
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-information" class="md-nav__link">
+    Further Information
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proposal-template" class="md-nav__link">
+    Proposal Template
+  </a>
+  
+    <nav class="md-nav" aria-label="Proposal Template">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what" class="md-nav__link">
+    What
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why" class="md-nav__link">
+    Why
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how" class="md-nav__link">
+    How
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#who" class="md-nav__link">
+    Who
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when" class="md-nav__link">
+    When
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-for-creating-a-successful-proposal" class="md-nav__link">
+    Tips for Creating a Successful Proposal
+  </a>
+  
+    <nav class="md-nav" aria-label="Tips for Creating a Successful Proposal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#engage-the-community" class="md-nav__link">
+    Engage the community
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demonstrate-clearly-how-your-proposal-will-benefit-decred" class="md-nav__link">
+    Demonstrate clearly how your proposal will benefit Decred
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-the-hype" class="md-nav__link">
+    Check the hype
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#speak-to-a-broad-audience" class="md-nav__link">
+    Speak to a broad audience
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-credibility" class="md-nav__link">
+    Build Credibility
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-information" class="md-nav__link">
+    Further Information
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="proposal-guidelines">Proposal Guidelines</h1>
+<hr />
+<p>The page provides proposal requirements, a basic <a href="#proposal-template">proposal template</a> and
+<a href="#tips-for-creating-a-successful-proposal">tips for creating a successful proposal</a>.
+See the <a href="../../governance/politeia/example-proposals.md">Example Proposals</a> page for
+example proposals that use this template.</p>
+<hr />
+<h2 id="requirements">Requirements</h2>
+<p>If your proposal seeks funds from the Treasury, in addition to answering all the questions
+in the <a href="#proposal-template">proposal template</a>, your proposal should provide the following
+information (if applicable).</p>
+<ul>
+<li><strong>Total budget:</strong> If your proposal draws down on its budget when milestones are achieved,
+include a draw schedule (how much is paid for each milestone achieved).
+To account for variance in the price of DCR, amounts must be specified in USD.
+The amount of DCR distributed will then be adjusted at payout according to the exchange rate.</li>
+<li><strong>Duration of contract:</strong> If your proposal provides an ongoing service, your proposal must
+provide an end date.</li>
+<li><strong>Restrictions on deliverables:</strong> Specify any license or other restrictions on
+deliverables. For example, if delivering software, specify whether it will be open-source,
+closed-source, and what (if any) license will be used.</li>
+<li><strong>Reporting commitment:</strong> Specify how you plan to report on the progress of your project. If
+reporting on an ongoing basis, specify what is being reported, who is responsible for the reporting,
+and a reporting schedule.</li>
+</ul>
+<hr />
+<h2 id="proposal-template">Proposal Template</h2>
+<p>All proposals should answer the following questions:</p>
+<h3 id="what">What</h3>
+<p>In the <em>What</em> section, provide a short description of the problem that will
+be addressed.</p>
+<h3 id="why">Why</h3>
+<p>In the <em>Why</em> section, answer why the proposal is needed and why it is
+a good idea.</p>
+<h3 id="how">How</h3>
+<p>In the <em>How</em> section, describe the steps you will perform to accomplish your
+goals.</p>
+<h3 id="who">Who</h3>
+<p>In the <em>Who</em> section, describe the entity that will
+complete the work and draw down on the proposal's budget.</p>
+<h3 id="when">When</h3>
+<p>In the <em>When</em> section, describe the project's milestones, expected
+completion dates, and the draw schedule (how much is paid for each milestone achieved).</p>
+<hr />
+<h2 id="tips-for-creating-a-successful-proposal">Tips for Creating a Successful Proposal</h2>
+<p>Following the below tips will greatly increase your proposal's chance of success.</p>
+<h4 id="engage-the-community">Engage the community</h4>
+<p>Engaging with the <a href="../../getting-started/beginner-guide.md#community">community</a> first,
+before submitting a proposal, will allow you to gauge interest in your idea, gather
+feedback, and better understand your proposal's chance of success before investing time
+in a proposal.</p>
+<h4 id="demonstrate-clearly-how-your-proposal-will-benefit-decred">Demonstrate clearly how your proposal will benefit Decred</h4>
+<p>Do not submit personal ventures, business ideas
+or experimentation, unless it clearly benefits the project.
+Explain how your proposal will directly further the project's aims, and provide
+clear deliverables and milestones.</p>
+<h4 id="check-the-hype">Check the hype</h4>
+<p>Many Decred stakeholders are highly technical veterans in the
+blockchain space. Over-hyped, buzzword-filled proposals without substance will likely be
+ignored. Be precise in your use of technical terms, realistic in your projections,
+and bring your A game in the comments.</p>
+<h4 id="speak-to-a-broad-audience">Speak to a broad audience</h4>
+<p>Some proposals will necessarily contain complex concepts and jargon. This is fine.
+Be aware however that not all stakeholders will be experts in your domain. You'll need
+their votes too. Take part of your proposal to explain any complex ideas in simple,
+easy-to-understand language all stakeholders can understand.</p>
+<p>In the case of a proposal covering an unfamiliar topic that has not previously
+been introduced to the community, consider running educational and Q&amp;A campaigns
+before putting the proposal to a vote.</p>
+<h4 id="build-credibility">Build Credibility</h4>
+<p>The bigger the proposal, the more you will need to convince stakeholders you
+are capable of doing what you propose. If you are unknown to the community, showcase past
+contributions to other projects (bonus points for verifiable open-source contributions).
+If your plan requires working with current Decred contractors,
+be sure to communicate with them beforehand and secure their support. If you're looking to
+build credibility within the community before submitting a proposal (a good strategy),
+you will find the Decred project very welcoming to contributors of all levels. Start small,
+deliver, and your chances of submitting a successful proposal will increase along with your
+credibility.</p>
+<hr />
+<h2 id="further-information">Further Information</h2>
+<ul>
+<li>The <a href="https://github.com/decredcommunity/guidelines/blob/master/proposals.md">decredcommunity/guidelines</a>
+  repo on GitHub has a very thorough set of guidelines and best practices for writing proposals.</li>
+<li><a href="https://medium.com/@decreddrive/writing-proposals-on-politeia-pi-e345621652a2">Writing Proposals on Politeia</a> by The Decred Drive.</li>
+<li><a href="https://blockcommons.red/politeia-digest/">Politeia Digest</a> provides a summary of activity on Politeia.</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "search.share"], "search": "../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6df46069.min.js"></script>
+      
+    
+  </body>
+</html>
