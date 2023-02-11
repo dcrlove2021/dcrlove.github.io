@@ -1,0 +1,768 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../Proposal/Proposal/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.11">
+    
+    
+      
+        <title>主权互联网 - Decred德信-中文指引</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0d440cfe.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bison-relay" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="Decred德信-中文指引" class="md-header__button md-logo" aria-label="Decred德信-中文指引" data-md-component="logo">
+      
+  <img src="../../imge/color.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Decred德信-中文指引
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              主权互联网
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="暗色模式"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="暗色模式" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="亮色模式"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="亮色模式" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Decred德信-中文指引" class="md-nav__button md-logo" aria-label="Decred德信-中文指引" data-md-component="logo">
+      
+  <img src="../../imge/color.svg" alt="logo">
+
+    </a>
+    Decred德信-中文指引
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        decred简介
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          杂志精选
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          杂志精选
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dcrmagazine/Space/" class="md-nav__link">
+        精选1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dcrmagazine/Imagining/" class="md-nav__link">
+        精选2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dcrmagazine/u-3-8-billion-worth-of-crypto-stolen-what-can-be-done/" class="md-nav__link">
+        精选3
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          原子交易所
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          原子交易所
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dcrdex/dcrdex/" class="md-nav__link">
+        交易所简介
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          提案系统
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          提案系统
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Proposal/Proposal/" class="md-nav__link">
+        提案系统
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          中继服务器
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          中继服务器
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          主权互联网
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        主权互联网
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#decred" class="md-nav__link">
+    Decred 的
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    推理与设计
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    执行
+  </a>
+  
+    <nav class="md-nav" aria-label="执行">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    没有帐户
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    嵌入式闪电网络和按消息付费
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p2p" class="md-nav__link">
+    P2P社交网络
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    启示
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    结论
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#decred" class="md-nav__link">
+    Decred 的
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    推理与设计
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    执行
+  </a>
+  
+    <nav class="md-nav" aria-label="执行">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    没有帐户
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    嵌入式闪电网络和按消息付费
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#p2p" class="md-nav__link">
+    P2P社交网络
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    启示
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    结论
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="bison-relay">Bison Relay：主权互联网</h1>
+<p><img alt="Decred 的" src="https://www.decredmagazine.com/content/images/2022/05/Decred.png" /></p>
+<h4 id="decred"><a href="https://www.decredmagazine.com/author/decred/">Decred 的</a></h4>
+<p>2022 年 12 月 15 日8分钟</p>
+<p>Bison Relay 代表了通信平台运作方式的重大架构转变。Decred 是货币进化而来的，Bison Relay 是互联网进化而来的。</p>
+<p>作者：<a href="https://blog.decred.org/authors/jy-p"><strong>JAKE YOCOM-PIATT</strong></a>于 2022 年 12 月 14 日</p>
+<p>今天，我发布了一个新的基于 Decred 的通信工具，<a href="https://bisonrelay.org/">Bison Relay</a>，它支持言论自由、自由联想，并且可以作为一个完全独立的网络替代堆栈<a href="https://blog.decred.org/2022/12/09/Trapped-in-the-Web/">，我在之前的文章中概述了网络的实质性问题</a>. Bison Relay 是一种异步客户端-服务器协议，它大量使用 Decred 闪电网络（“LN”），其中发送的每条消息都经过加密、元数据最小化，并通过 LN 小额支付进行支付。Bison Relay 服务器是无账户的，每条消息都是单独处理的，在发送和接收之前都需要付费。Bison Relay 紧密集成了支付、消息传递和社交媒体，这个初始版本实现了类似于 Twitter/Facebook 的点对点功能，可以向订阅者发帖、订阅用户的帖子、转发帖子以及回复帖子和评论在帖子上。</p>
+<p><a href="https://bisonrelay.org/"><img alt="野牛继电器" src="https://www.decredmagazine.com/content/images/2022/12/Bison-Relay-by-Decred.jpg" /></a></p>
+<p>野牛继电器</p>
+<p>在下面概述的推理中，将清楚为什么言论自由需要这种基于微支付的架构。虽然 LN 有其自身的复杂性，但 Bison Relay 可以有效地取代上一篇文章中提到的 5 种协议和堆栈中的 4 种——DNS、HTTP、SMTP 和 TLS——其中​​现有的 Decred LN 和链上支付取代了法定支付基础设施。网络监控和审查的猖獗和侵略性表明网络迫切需要重新设计，而 Bison Relay 以基本对等加密内容中继网络的形式提供重新设计。对于非常少量的 Decred，例如 0.1 DCR，用户可以通过 Bison Relay 访问免费、主权和私人演讲数月。</p>
+<p>此初始版本包括适用于 Windows、MacOS 和 Linux 的图形用户界面（“GUI”）客户端和适用于大多数平台的命令行界面（“CLI”）客户端。</p>
+<h2 id="_1"><strong>推理与设计</strong></h2>
+<p>Bison Relay 是在假设强大的对手控制基础设施的主要组件的威胁模型下开发的，这是 Decred 主要功能的标准，例如权益证明治理、StakeShuffle 隐私或 DCRDEX 原子交换交换。指导 Bison Relay 架构的一个关键观察是服务器运营商对用户数据和元数据的保管被用来审查和监视用户，因此广泛的方法是积极地减少服务器运营商对用户数据和元数据的可访问性和保管.</p>
+<p>Bison Relay 的设计过程可以通过以下一系列观察清楚地描述：</p>
+<ul>
+<li>假设服务器运营商是恶意的，并试图监视和审查客户。</li>
+<li>根据许多其他聊天协议，默认情况下使用端到端加密（“E2EE”）来加密用户消息。这可以防止服务器操作员读取客户端消息。</li>
+<li>删除客户帐户的服务器概念，以最大限度地减少服务器操作员对元数据的跟踪。</li>
+<li>将客户端消息元数据减少到最低限度。</li>
+<li>如果服务器运营商无法将数据传输链接到特定客户端，它会阻止传统的恶意客户端禁令，从而产生拒绝服务（“DoS”）向量。</li>
+<li>代替尝试禁止恶意客户，而是向所有客户收取每条发送和接收的消息的费用，费用是通过闪电网络支付的。</li>
+<li>将服务器的复杂性降低到最低限度，其中服务器仅在接收发送的消息之前以及将消息转发给接收者之前检查是否已付款。</li>
+<li>客户端通过带外（“OOB”）邀请或通过由他们共有的链接调解的邀请相互连接，例如，Alice 认识 Bob，Bob 认识 Carol，因此 Bob 将 Alice 介绍给 Carol。</li>
+</ul>
+<p>构建 Bison Relay 大约花了 2 年时间，从 2020 年秋季开始，我提出了最初的概念，Marco Peereboom 和我完成了初始设计工作，Marco 完成了 CLI 客户端和服务器的所有早期开发。从有效的 CLI 概念验证到成品，包括所有 LN 支付集成、跨平台 GUI 和服务器后端重新设计，由 Miki Totefu、Dave Collins、David Hill 和 Alex Yocom 完成-皮亚特。Bison Relay 已经进行了几个月的私人 Beta 测试，只修复了一些错误并且很稳定。</p>
+<h2 id="_2"><strong>执行</strong></h2>
+<p>Bison Relay 的动机和特点从上面应该已经比较清楚了，那么是时候从工程的角度来回顾一下这些主要特性是如何实现的了。</p>
+<ul>
+<li>Bison Relay 是使用我们现有的<a href="https://github.com/companyzero/zkc/">安全通信工具 zkc</a>中的代码构建的，其中的工作从删除客户帐户的客户端和服务器概念开始。相应地，Bison Relay 继承了<a href="https://blog.decred.org/2016/12/07/zkc-Secure-Communications/">zkc 的各种安全特性，</a>如双棘轮消息和标头加密、后量子安全公钥基础设施以及简单的 CLI 客户端和服务器。</li>
+<li>为了限制针对服务器上的消息发送和接收路径的 DoS 攻击，每个此类操作都需要从客户端到服务器的预先相应的小额支付。</li>
+<li>添加了一个用于客户端连接到新对等点的新对等过程，其中对等点之间的棘轮启动是通过 OOB 邀请或由 1 个或多个中间对等点调解完成的，而不是使用服务器。</li>
+</ul>
+<h3 id="_3"><strong>没有帐户</strong></h3>
+<p>从 zkc 中删除帐户有点棘手，因为 zkc 如何使用双棘轮来加密和解密所有消息。在 zkc 中，与大多数其他聊天协议一样，服务器将消息从用户 A 路由到用户 B，任何错过的消息都可能导致棘轮状态不同步并需要重置。我们决定使用棘轮状态作为每个消息唯一标识符的基础，因此已经在 2 个对等方之间共享的棘轮状态可以用作消息加密之外的路由基础。为此，我们从 Double Ratchet 获取标头加密密钥（每条消息都不是唯一的），并使用 HMAC 将其调整为每条消息唯一。通过获取每个消息的唯一标头加密密钥并对其进行哈希处理，我们可以为使用棘轮的两个对等方可以跟踪的每条消息派生一个唯一标识符。<a href="https://pca.st/7xws4p19">乔纳森·洛根 (Jonathan Logan) 对投放团伙的报道</a>，其中黑市商品使用加密货币在线销售，投放地点随后向买家披露以供检索。</p>
+<h3 id="_4"><strong>嵌入式闪电网络和按消息付费</strong></h3>
+<p>一旦账户不再与消息相关联，客户端通过服务器上传和下载消息必须先通过闪电网络进行小额支付。如果这没有发生，恶意客户端可以以非常低的成本进行 DoS 攻击。上传的数据按字节付费，接收的消息按消息付费，因为在第一种情况下，磁盘空间是有限的资源，在第二种情况下，数据库负载会随着消息数的增加而增加。发送的消息由服务器存储 30 天，然后从其数据库 (PostgreSQL) 中清除，这可能会强制对一次离线超过 30 天的用户进行棘轮重置。</p>
+<h3 id="p2p"><strong>P2P社交网络</strong></h3>
+<p>典型的社交媒体或聊天服务有一个用户的数据库表，因此用户 A 可以请求与用户 B 连接，服务器路由消息。由于我们设计了基于服务器的消息路由，而不是使用基于客户端的路由，因此客户端必须在不使用服务器“电话簿”（即查找表）的情况下相互连接。客户端可以通过 OOB 邀请进行连接，该邀请可以通过其他聊天或中继网络发送，最好是通过安全通道，或者直接使用中介密钥交换通过 Bison Relay 进行连接。这种中介密钥交换过程大致如下：</p>
+<ul>
+<li>Bob 与 Alice 和 Carol 保持联系，但 Alice 和 Carol 没有通过 Bison Relay 联系。</li>
+<li>Bob 发布了 Alice 和 Carol 都可以看到的内容。</li>
+<li>爱丽丝对帖子发表评论。</li>
+<li>卡罗尔看到爱丽丝对该帖子的评论。</li>
+<li>Carol 决定启动中介密钥交换以直接与 Alice 连接。</li>
+<li>Bob 调解 Carol 与 Alice 请求的密钥交换。</li>
+<li>卡罗尔和爱丽丝直接相连。</li>
+</ul>
+<p>类似的过程可能发生在试图连接的 2 个对等点之间存在的多个中间对等点上。中介密钥交换通过恢复到会见人的“旧”空间模型，避免了对权威查找表的需要，在这种模型中，您通过已经认识的人被介绍给新人。</p>
+<p>类似于在各种现有社交媒体平台上转发，客户可以将另一个客户的帖子“转发”给自己的关注者。如果多个客户端中继一系列中的单个帖子，则可能会发生上述情况，其中 2 个尝试连接的对等点之间存在多个中间对等点。</p>
+<h2 id="_5"><strong>启示</strong></h2>
+<p>Bison Relay 代表了通信平台运作方式的重大架构转变。这种架构有明显和更微妙的后果。</p>
+<p><strong>显而易见的：</strong></p>
+<ul>
+<li>可靠中立的社交媒体基础设施的受众可能会发现 Bison Relay 是一个有吸引力的选择。与几乎所有其他社交媒体平台不同，没有服务器运营商或中央计划人员可以任意关闭您的帐户。客户对其通信和网络拥有主权。</li>
+<li>使用 Bison Relay 需要拥有少量的 Decred，例如 0.1 DCR。这将在以前不存在的更广泛的受众中产生对 Decred 的需求。</li>
+<li>建立在 Bison Relay 上的网络具有监视和审查抵抗力，减少了许多源自恶意广告商、服务器运营商和政府行为的问题。</li>
+<li>现有的 Bison Relay 客户端可用于通过邀请和在链上发送少量 Decred 来为新客户的渠道提供资金来吸引新客户。用户由他们的朋友和同事加入，将电信与用户现有的社交网络联系起来。</li>
+<li>Bison Relay 将推动 Decred LN 的增长和去中心化。就像互联网从几个节点开始一样，LN 集线器可以添加到更多位置以分散负载。</li>
+</ul>
+<p><strong>微妙的：</strong></p>
+<ul>
+<li>与大多数科技公司不同，我们不需要数十万或数百万的 Bison Relay 用户来大幅放大 Decred 的价值主张。Bison Relay 旨在通过口口相传来发展。只是不需要电话号码元数据且成本低的类似信号系统的前景是吸引人的。</li>
+<li>大多数现有的网络基础设施都可以在 Bison Relay 上复制，例如页面、电子商务和付费订阅。这是一项正在进行的工作，在接下来的几周内应该会有一些东西可以展示。想想没有可疑平台费用和限制的实体店、Patreon、Substack、Soundcloud 和 OnlyFans。</li>
+<li>Bison Relay 有意没有权威的命名系统。一旦有了公共目录，就不可能将垃圾邮件归因于来源。由于在 Bison Relay 中没有电话簿，垃圾邮件用户和垃圾邮件的路径总是可归因的。</li>
+<li>Decred 难以获得实质性的法定交易所上市，因此 Bison Relay 通过促进本地化购买 Decred（通过现金或其他方式）来绕过这一障碍。</li>
+</ul>
+<p>很难捕捉到 Bison Relay 的所有各种含义，因此请随时通过聊天或<a href="https://decred.org/community/">其他沟通渠道</a><a href="https://chat.decred.org/">与我们交流</a>。<a href="https://decred.org/community/"></a></p>
+<h2 id="_6"><strong>结论</strong></h2>
+<p>Bison Relay 是我多年的努力，旨在使用加密货币创建一个言论自由和自由联想的平台。早在 2017 年，我就懒洋洋地想知道这是怎么可能的，5 年后，我们有了一个具有漂亮用户界面的可用产品。自 2017 年秋季以来的这些年一直不愉快，因为我们通过恶意矿工操纵我们的市场、持续协调的拖钓活动、贸易媒体黑名单和严厉的 Twitter 审查而奋勇前进。随着 Bison Relay 的发布，Decred 和在其他平台上受到积极审查的任何其他个人或团体都可以开始建立自己的内容、思想和资本主权互联网。Decred 是货币进化而来的，Bison Relay 是互联网进化而来的。</p>
+<p><a href="https://bisonrelay.org/">加入我们的 Bison Relay</a>并建立您自己的主权互联网。革命不会受到拘禁、审查或监视。</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.sections", "search.share"], "search": "../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6df46069.min.js"></script>
+      
+    
+  </body>
+</html>
